@@ -8,13 +8,28 @@ body{
 }
 
 .main{
-    margin: 0 10%;
+    margin: 0 15%;
+    flex-wrap: wrap;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
+    /* border-bottom: 0.5px solid white; */
 }
+
+.header{
+    color: rgb(229, 231, 235);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(229, 231, 235);
+    font-size: 18px;
+
+}
+
 .links ul{
     display: flex;
     list-style: none;
@@ -47,13 +62,14 @@ body{
 
 .hero-image
 {
-flex:1;    
+flex:1;  
+flex-shrink: inherit;  
 }
 .hero-image img{
     height: auto;
-    width: 900px;
+    width: 800px;
    margin-left: 20%;
-   margin-top: 5%;
+   /* margin-top: 5%; */
 }
 
 .hero-text h1{
@@ -75,6 +91,46 @@ flex:1;
     border-radius: 10px;
     padding: 5px;
     width: 200px;
-    color: rgb(249, 250, 248);  
+    color: rgb(249, 250, 248); 
+    border: 1px solid rgb(56, 130, 246); 
 }
 
+.info-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header{
+    margin:auto;
+    padding: 30px;
+    font-size: 36px;
+    font-weight: extra-bold;
+    
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-basis: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: justify;
+    flex-basis: 250px;
+    
+}
+
+.card img{
+    width: 250px;
+    height: auto;
+    border: 2px solid rgb(56, 130, 246);
+    border-radius: 8px;
+}
+
+.card p{
+    /* width: 250px; */
+}
